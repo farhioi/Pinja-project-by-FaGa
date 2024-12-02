@@ -1,14 +1,110 @@
-#goals {
-  width: 35rem;
-  max-width: 90%;
-  margin: 3rem auto;
+/* Yläbanneri */
+.header-banner {
+  background-color: #d6336c; /* Pinkki väri */
+  color: white;
+  padding: 5px 0; /* Ohuempi banneri */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0; /* Poistetaan mahdolliset marginaalit */
 }
 
-#goal-form {
-  width: 30rem;
-  max-width: 90%;
-  margin: 3rem auto;
-  padding: 2rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+/* Taustaväri ja yleinen asettelu */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe6f2; /* Vaaleanpunainen taustaväri */
+  margin: 0; /* Poistetaan marginaalit */
+  padding: 0; /* Poistetaan padding */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Poistetaan ylimääräinen tila ylhäältä */
+  height: 100vh; /* 100% viewportin korkeus */
+  box-sizing: border-box; /* Varmistetaan, ettei padding tai border lisää tilaa */
+}
+
+/* Keskitetty säilö */
+div {
+  width: 100%; /* Ota koko leveys */
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #ffffff; /* Valkoinen tausta */
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Tekstien keskittäminen */
+  margin-top: 50px; /* Lisää tilaa bannerin ja sisällön väliin */
+  box-sizing: border-box;
+}
+
+/* Otsikoiden tyyli */
+h1, h3 {
+  color: #d6336c; /* Tummempi pinkki-tyyppinen väri */
+  margin-bottom: 20px;
+}
+
+/* Lomakkeiden syötekentät ja painikkeet */
+input[type="text"],
+textarea,
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #d6336c; /* Pinkki reunus */
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #d6336c; /* Pinkki tausta */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Lisää väli painikkeiden väliin */
+}
+
+button:hover {
+  background-color: #b92c58; /* Tumma pinkki hover-tila */
+}
+
+/* Listan ja poistonapien tyylit */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Poistetaan marginaalit */
+}
+
+li {
+  background-color: #ffffff; /* Valkoinen tausta */
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  border: 1px solid #d6336c; /* Pinkki reunus */
+}
+
+button {
+  background-color: #d6336c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b92c58;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
 }

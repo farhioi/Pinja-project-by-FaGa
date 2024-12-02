@@ -1,8 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client';  // React 18:n uusi API
+import './index.css';  // Yleinen tyylitiedosto
+import App from './App';  // Sovelluksen pääkomponentti
 
-import './index.css';
-import App from './App';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+const root = ReactDOM.createRoot(document.getElementById('root'));  // Haetaan HTML:stä id="root"
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
